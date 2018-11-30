@@ -46,6 +46,7 @@ public class MTView extends SurfaceView implements Callback {
         }
     }
 
+    @Override
     public boolean onTouchEvent(MotionEvent event) {
         int pointerCount = event.getPointerCount();
         if (pointerCount > MAX_TOUCHPOINTS) {
@@ -83,6 +84,7 @@ public class MTView extends SurfaceView implements Callback {
         c.drawCircle((float) x, (float) y, 40.0f * scale, paint);
     }
 
+    @Override
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
         width = width;
         height = height;
@@ -101,9 +103,11 @@ public class MTView extends SurfaceView implements Callback {
         }
     }
 
+    @Override
     public void surfaceCreated(SurfaceHolder holder) {
     }
 
+    @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
     }
 }
