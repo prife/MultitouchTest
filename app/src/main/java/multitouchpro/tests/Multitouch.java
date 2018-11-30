@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class Multitouch extends Activity {
-    private MTView mMTView;
-
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(1);
